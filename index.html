@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <meta name="description" content="Discover events, meet people and make memories with K Explore.">
+  <title>K Explore — Find Your Next Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> YOUR NEXT GREAT EXPERIENCE STARTS HERE <span class="announcement-note">Discover. Connect. Experience.</span></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="K Explore home"><span class="brand-icon">K<span>.</span></span><span>explore</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" id="nav"><a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#events">Explore events</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#registrations">My registrations</a></nav>
+    <div class="header-actions"><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☼</button><a class="button button-small button-dark" href="#events">Find an event <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE PLACE TO BE</div>
+        <h1>Make room for<br><em>something</em> <span class="outline">memorable.</span></h1>
+        <p class="hero-description">From big ideas to brilliant nights out, find the events that bring your interests to life.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#events">Explore events <span>↗</span></a><a class="text-link" href="#about">Get to know us <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>✦</span><span>♫</span><span>◎</span></div><div><strong>Good people. Great experiences.</strong><small>Your next story is waiting.</small></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image"></div><div class="hero-image-overlay"></div>
+        <div class="floating-card"><span class="live-dot"></span><div><small>UP NEXT</small><strong>Ideas After Hours</strong><span>Creative meet-up · Nov 21</span></div><span class="float-arrow">↗</span></div>
+        <div class="hero-stamp"><span>MAKE</span><span>IT</span><b>HAPPEN</b></div>
+        <div class="hero-side-label">EXPERIENCES THAT STAY WITH YOU — 2026</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>20°17' N&nbsp; 85°49' E</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Explore categories"><div class="ticker-track"><span>LIVE MUSIC ✳</span><span>CREATIVE MEETUPS ✳</span><span>TECH & INNOVATION ✳</span><span>ART & CULTURE ✳</span><span>WORKSHOPS ✳</span><span>LIVE MUSIC ✳</span><span>CREATIVE MEETUPS ✳</span></div></section>
+
+    <section class="events-section section-wrap" id="events">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</div><h2>Find your <em>next</em><br>favourite thing.</h2></div><p>Curated moments, fresh perspectives and people worth meeting. Pick your vibe and we'll take it from there.</p></div>
+      <div class="event-tools reveal"><div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search events, places, experiences..." aria-label="Search events"><kbd>⌘ K</kbd></div><div class="filter-row" id="filters"><button class="filter-chip selected" data-category="All">All events</button><button class="filter-chip" data-category="Music">Music</button><button class="filter-chip" data-category="Technology">Technology</button><button class="filter-chip" data-category="Arts">Arts & culture</button><button class="filter-chip" data-category="Workshop">Workshops</button><button class="filter-chip" data-category="Community">Community</button></div></div>
+      <div class="results-meta"><span id="resultCount">Showing all events</span><button id="clearFilters" class="clear-button">Clear filters ×</button></div>
+      <div class="event-grid" id="eventGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>No events found just yet.</h3><p>Try another search or category.</p><button class="button button-dark" id="resetSearch">Reset search</button></div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-image"></div><div class="feature-content reveal"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> MORE THAN A CALENDAR</div><h2>Good things<br>happen when<br><em>we show up.</em></h2><p>K Explore is your shortcut to experiences that spark curiosity, create connections and turn an ordinary day into a story.</p><a class="button button-light" href="#events">Find your people <span>↗</span></a></div>
+      <div class="feature-number">01 <span>/ 03</span></div>
+    </section>
+
+    <section class="about-section section-wrap" id="about"><div class="about-mark">K<span>.</span></div><div class="about-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</div><h2>Life is better<br><em>experienced</em> together.</h2><p>We believe the best moments happen when people come together around the things they love. K Explore makes discovering those moments simple — browse what's happening, find your kind of crowd, and save your spot.</p><a href="#events" class="text-link">Explore what's on <span>→</span></a></div><div class="about-stats reveal"><div><strong>01</strong><span>Discover what<br>moves you</span></div><div><strong>02</strong><span>Connect with<br>your community</span></div><div><strong>03</strong><span>Make memories<br>that matter</span></div></div></section>
+
+    <section class="registrations-section" id="registrations"><div class="section-wrap registrations-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR PLANS, IN ONE PLACE</div><h2>Your next chapter<br>starts <em>here.</em></h2><p>Events you've registered for will appear here. Keep your plans close.</p></div><div class="registration-list" id="registrationList"><div class="registration-empty"><span>↗</span><strong>Nothing on your calendar yet.</strong><small>Find an event and make it yours.</small><a href="#events">Browse events →</a></div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-icon">K<span>.</span></span><span>explore</span></a><p>Go out. Get curious.<br>Make it memorable.</p><a class="back-top" href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© 2026 K EXPLORE. MADE FOR THE MOMENTS.</span><span>DISCOVER · CONNECT · EXPERIENCE</span></div></footer>
+
+  <div class="modal-backdrop" id="eventModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close aria-label="Close">×</button><div id="modalContent"></div></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
